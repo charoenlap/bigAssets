@@ -13,9 +13,11 @@ import { CTeamRequestComponent } from './ClearAdvance/c-team-request/c-team-requ
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PermissionComponent } from './setting/permission/permission.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { AccountDetailComponent } from './te/account-detail/account-detail.component';
 import { AccountComponent } from './te/account/account.component';
 import { FormRequestComponent } from './te/form-request/form-request.component';
 import { MyRequestComponent } from './te/my-request/my-request.component';
+import { RequestApproveComponent } from './te/request-approve/request-approve.component';
 import { TeamRequestComponent } from './te/team-request/team-request.component';
 
 const routes: Routes = [
@@ -26,7 +28,9 @@ const routes: Routes = [
   { path: 'te/myRequest', component: MyRequestComponent },
   { path: 'te/teamRequest', component: TeamRequestComponent },
   { path: 'te/account', component: AccountComponent },
+  { path: 'te/account/detail', component: AccountDetailComponent },
   { path: 'te/myRequest/add', component: FormRequestComponent },
+  { path: 'te/teamRequest/approve', component: RequestApproveComponent },
   { path: 'advance/myRequest', component: AMyRequestComponent },
   { path: 'advance/myRequest/add', component: AFormMyRequestAddComponent },
   { path: 'advance/temeRequest', component: ATeamRequestComponent },

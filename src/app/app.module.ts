@@ -23,6 +23,8 @@ import { CAccountComponent } from './ClearAdvance/c-account/c-account.component'
 import { FormRequestComponent } from './te/form-request/form-request.component';
 import { AFormMyRequestAddComponent } from './advance/a-form-my-request-add/a-form-my-request-add.component';
 import { CFormMyRequestAddComponent } from './ClearAdvance/c-form-my-request-add/c-form-my-request-add.component';
+import { RequestApproveComponent } from './te/request-approve/request-approve.component';
+import { AccountDetailComponent } from './te/account-detail/account-detail.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { CFormMyRequestAddComponent } from './ClearAdvance/c-form-my-request-add
     CAccountComponent,
     FormRequestComponent,
     AFormMyRequestAddComponent,
-    CFormMyRequestAddComponent
+    CFormMyRequestAddComponent,
+    RequestApproveComponent,
+    AccountDetailComponent
   ],
   imports: [
     BrowserModule,

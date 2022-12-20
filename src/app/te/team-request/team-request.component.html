@@ -20,48 +20,37 @@
     <!-- Page Content -->
     <div class="content">
       <div class="block block-rounded">
+        <div class="block-header block-header-default">
+          <h3 class="block-title">Data</h3>
+        </div>
         <div class="block-content">
           <div class="row mb-3">
-            <div class="col-md-3">
-              <a href="#" class="btn btn-primary" routerLink=""><i class="fa fa-plus"></i>  New Claim</a>
+            <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="Search">
             </div>
-            <div class="col-md-9">
-              <div class="row">
-                <div class="col">
-                  <select name="" id="" class="form-select">
-                    <option value="">-- Status --</option>
-                  </select>
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Doc. ID">
-                </div> 
-                <div class="col">
-                  <button class="btn btn-primary">Search</button>
-                </div>
-              </div>
+            <div class="col-md-8">
+              <button class="btn btn-primary">Search</button>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
               <table class="table table-bordered">
                 <thead>
-                  <tr>
+                  <tr class="table-dark">
                     <th>Claim No</th>
                     <th>Date</th>
                     <th>INITIALS</th>
                     <th>Amount</th>
                     <th>Status</th>
-                    <th class="text-center">Delete Doc.</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr *ngFor="let data of data">
-                    <td><a href="">{{data.claim}}</a></td>
+                    <td><a href="#" routerLink="/te/teamRequest/approve">{{data.claim}}</a></td>
                     <td>{{data.date}}</td>
                     <td>{{data.ini}}</td>
                     <td>{{data.amount}}</td>
                     <td>{{data.status}}</td>
-                    <td class="text-center"><a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</a></td>
                   </tr>
                 </tbody>
               </table>

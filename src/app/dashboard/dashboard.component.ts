@@ -7,5 +7,5 @@ import { Location } from '@angular/common';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
-
+  
 }
