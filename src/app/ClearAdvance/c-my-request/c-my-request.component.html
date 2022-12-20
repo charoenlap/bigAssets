@@ -1,0 +1,77 @@
+<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
+    <app-header></app-header>
+    <main id="main-container">
+      <!-- Hero -->
+      <div class="bg-body-light">
+        <div class="content content-full">
+          <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+            <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Travelling & Expense</h1>
+            <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">Travelling & Expense</li>
+                <li class="breadcrumb-item active" aria-current="page">Lists</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- END Hero -->
+
+      <!-- Page Content -->
+      <div class="content">
+        <div class="block block-rounded">
+          <div class="block-content">
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <a href="#" class="btn btn-primary" routerLink="/clearAdvance/myRequest/add"><i class="fa fa-plus"></i>  New Clear Advance</a>
+              </div>
+              <div class="col-md-9">
+                <div class="row">
+                  <div class="col">
+                    <select name="" id="" class="form-select">
+                      <option value="">-- Status --</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Doc. ID">
+                  </div> 
+                  <div class="col">
+                    <button class="btn btn-primary">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Claim No</th>
+                      <th>Date</th>
+                      <th>INITIALS</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                      <th class="text-center">Delete Doc.</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let data of data">
+                      <td><a href="#" routerLink="/clearAdvance/myRequest/add">{{data.claim}}</a></td>
+                      <td>{{data.date}}</td>
+                      <td>{{data.ini}}</td>
+                      <td>{{data.amount}}</td>
+                      <td>{{data.status}}</td>
+                      <td class="text-center"><a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Page Content -->
+    </main>
+    <app-footer></app-footer>
+</div>
+    
