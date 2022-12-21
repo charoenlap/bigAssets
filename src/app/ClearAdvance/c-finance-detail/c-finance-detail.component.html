@@ -1,0 +1,170 @@
+<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
+  <app-header></app-header>
+  <main id="main-container">
+    <!-- Hero -->
+    <div class="bg-body-light">
+      <div class="content content-full">
+        <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+          <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Travelling & Expense</h1>
+          <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">Accounting</li>
+              <li class="breadcrumb-item">Lists</li>
+              <li class="breadcrumb-item active" aria-current="page">Detail</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- END Hero -->
+
+    <!-- Page Content -->
+    <div class="content">
+      <div class="block block-rounded">
+        <div class="block-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row mb-2">
+                <label class="col col-form-label">Advance No : A123456789</label>
+                <label class="col col-form-label">Request Date :</label>
+                <div class="col">
+                  <input type="date" class="form-control">
+                </div>
+                <label class="col col-form-label">Status : Waiting Approve</label>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="row mb-2">
+                <div class="col">
+                  <label class="form-label">Payment Type :</label>
+                  <select name="" id="" class="form-select">
+                    <option value="">Transfer</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label class="form-label">Advance Type :</label>
+                  <select name="" id="" class="form-select">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="row mb-2">
+                <div class="col">
+                  <label class="form-label">Request For :</label>
+                  <select name="" id="" class="form-select">
+                    <option value="">Transfer</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label class="form-label">Pay to :</label>
+                  <select name="" id="" class="form-select">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label class="form-label">Cost center :</label>
+            </div>
+            <div class="col-md-12">
+              <div class="row mb-2">
+                <div class="col">
+                  <input type="date" class="form-control">
+                </div>
+                <label class="col col-form-label">Created by :</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block block-rounded">
+        <div class="block-content">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <table class="table table-bordered mb-0">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Description</th>
+                    <th>CostCenter</th>
+                    <th>Amount</th>
+                    <th>Base VAT</th>
+                    <th>VAT</th>
+                    <th>%WHY</th>
+                    <th>Absorb</th>
+                    <th>WHY</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center"><a href="#">1</a></td>
+                    <td>...</td>
+                    <td>1,000.00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a href="#">2</a></td>
+                    <td>...</td>
+                    <td>1,000.00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a href="#">3</a></td>
+                    <td>...</td>
+                    <td>1,000.00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="5"></td>
+                    <td colspan="2">Total amount (Include VAT) :</td>
+                    <td colspan="2">Total Withholding Tax :</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5"></td>
+                    <td colspan="2">Total Base VAT :</td>
+                    <td colspan="2">Total Withholding Tax - BIG Absorb :</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5"></td>
+                    <td colspan="2">Total VAT :</td>
+                    <td colspan="2">Total expense :</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="col-md-12 mb-3 text-end">
+              <button class="btn btn-primary btn-sm"><i class="fa fa-print"></i> Print</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <button class="btn btn-danger me-1">Fl-reject</button>
+              <button class="btn btn-primary me-1">Fl-Approve</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Page Content -->
+  </main>
+  <app-footer></app-footer>
+</div>

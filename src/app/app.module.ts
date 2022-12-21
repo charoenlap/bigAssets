@@ -22,9 +22,17 @@ import { CFinanceComponent } from './ClearAdvance/c-finance/c-finance.component'
 import { CAccountComponent } from './ClearAdvance/c-account/c-account.component';
 import { FormRequestComponent } from './te/form-request/form-request.component';
 import { AFormMyRequestAddComponent } from './advance/a-form-my-request-add/a-form-my-request-add.component';
-import { CFormMyRequestAddComponent } from './ClearAdvance/c-form-my-request-add/c-form-my-request-add.component';
 import { RequestApproveComponent } from './te/request-approve/request-approve.component';
 import { AccountDetailComponent } from './te/account-detail/account-detail.component';
+import { ATeamRequestApproveComponent } from './advance/a-team-request-approve/a-team-request-approve.component';
+import { UserGroupComponent } from './setting/user-group/user-group.component';
+import { UserComponent } from './setting/user/user.component';
+import { AFinanceDetailComponent } from './advance/a-finance-detail/a-finance-detail.component';
+import { AAccountDetailComponent } from './advance/a-account-detail/a-account-detail.component';
+import { CMyRequestDetailComponent } from './ClearAdvance/c-my-request-detail/c-my-request-detail.component';
+import { CTeamRequestDetailComponent } from './ClearAdvance/c-team-request-detail/c-team-request-detail.component';
+import { CFinanceDetailComponent } from './ClearAdvance/c-finance-detail/c-finance-detail.component';
+import { CAccountDetailComponent } from './ClearAdvance/c-account-detail/c-account-detail.component';
 
 @NgModule({
   declarations: [
@@ -47,9 +55,17 @@ import { AccountDetailComponent } from './te/account-detail/account-detail.compo
     CAccountComponent,
     FormRequestComponent,
     AFormMyRequestAddComponent,
-    CFormMyRequestAddComponent,
     RequestApproveComponent,
-    AccountDetailComponent
+    AccountDetailComponent,
+    ATeamRequestApproveComponent,
+    UserGroupComponent,
+    UserComponent,
+    AFinanceDetailComponent,
+    AAccountDetailComponent,
+    CMyRequestDetailComponent,
+    CTeamRequestDetailComponent,
+    CFinanceDetailComponent,
+    CAccountDetailComponent
   ],
   imports: [
     BrowserModule,
