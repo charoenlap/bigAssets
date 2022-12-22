@@ -27,12 +27,14 @@ import { FormRequestComponent } from './te/form-request/form-request.component';
 import { MyRequestComponent } from './te/my-request/my-request.component';
 import { RequestApproveComponent } from './te/request-approve/request-approve.component';
 import { TeamRequestComponent } from './te/team-request/team-request.component';
+import { PermissionAddComponent } from './setting/permission-add/permission-add.component';
 
 const routes: Routes = [
-  { path: '',  component: SignInComponent },
+  { path: '',  component: SignInComponent },  
   { path: 'dashboard', component: DashboardComponent },
   { path: 'sign-in', component: SignInComponent },
   { path: 'permission', component: PermissionComponent },
+  { path: 'permission/add', component: PermissionAddComponent },
   { path: 'userGroup', component: UserGroupComponent },
   { path: 'user', component: UserComponent },
   { path: 'te/myRequest', component: MyRequestComponent },

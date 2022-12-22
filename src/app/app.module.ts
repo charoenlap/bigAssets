@@ -33,6 +33,7 @@ import { CMyRequestDetailComponent } from './ClearAdvance/c-my-request-detail/c-
 import { CTeamRequestDetailComponent } from './ClearAdvance/c-team-request-detail/c-team-request-detail.component';
 import { CFinanceDetailComponent } from './ClearAdvance/c-finance-detail/c-finance-detail.component';
 import { CAccountDetailComponent } from './ClearAdvance/c-account-detail/c-account-detail.component';
+import { PermissionAddComponent } from './setting/permission-add/permission-add.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { CAccountDetailComponent } from './ClearAdvance/c-account-detail/c-accou
     CMyRequestDetailComponent,
     CTeamRequestDetailComponent,
     CFinanceDetailComponent,
-    CAccountDetailComponent
+    CAccountDetailComponent,
+    PermissionAddComponent
   ],
   imports: [
     BrowserModule,
