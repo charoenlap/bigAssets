@@ -6,14 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./a-form-my-request-add.component.scss']
 })
 export class AFormMyRequestAddComponent {
-  showElement = false;
+  showEmployee = false;
+  showVendor = false;
   async onOptionChange(event: Event) {
     const selectElement = event.target as HTMLSelectElement;
     const selectedOption = selectElement.value;
-    if(selectedOption == '3'){
-      this.showElement = !this.showElement;
-    }else if(selectedOption == "no"){
-      this.showElement = false;
+    if(selectedOption == "employee"){
+      this.showEmployee = true;
+      this.showVendor = false;
+    }else if(selectedOption == "vendor"){
+      this.showEmployee = false;
+      this.showVendor = true;
+    }else{
+      this.showEmployee = false;
+      this.showVendor = false;
     }
   }
 }

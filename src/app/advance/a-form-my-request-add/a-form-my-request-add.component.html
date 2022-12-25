@@ -30,28 +30,38 @@
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="" class="form-label">Request For :</label>
-                        <select name="" id="" class="form-select">
-                            <option value="">Employee</option>
+                        <select name="" id="" class="form-select" (change)="onOptionChange($event)">
+                            <option value="">-- Select --</option>
+                            <option value="employee">Employee</option>
+                            <option value="vendor">Vendor</option>
                         </select>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" *ngIf="showEmployee">
                         <label for="" class="form-label">Pay to :</label>
                         <select name="" id="" class="form-select">
                             <option value=""></option>
                         </select>
                     </div>
+                    <div class="col-md-6" *ngIf="showVendor">
+                      <input type="text" class="form-control" placeholder="Vendor Name.">
+                      <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Vendor Address"></textarea>
+                  </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="" class="form-label">Payment Type :</label>
                         <select name="" id="" class="form-select">
-                            <option value="">Transfer</option>
+                          <option value="">-- Select --</option>
+                          <option value="">Transfer</option>
+                          <option value="">Cash</option>
+                          <option value="">Cheque</option>
                         </select>
                     </div>
                     <div class="col-md-6">
                         <label for="" class="form-label">Advance Type :</label>
                         <select name="" id="" class="form-select">
                             <option value="">General</option>
+                            <option value="">Donation</option>
                         </select>
                     </div>
                 </div>
@@ -63,7 +73,7 @@
                   <div class="col-md-6">
                       <label for="" class="form-label">Cost center :</label>
                       <select name="" id="" class="form-select">
-                          <option value=""></option>
+                          <option value="">100100100 : ACCOUNTING</option>
                       </select>
                   </div>
               </div>
@@ -82,7 +92,7 @@
                     <th>Description</th>
                     <th>Amount</th>
                     <th>VAT</th>
-                    <th>WHY</th>
+                    <th>WHT</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -108,6 +118,10 @@
                   </tr>
                 </tfoot>
               </table>
+            </div>
+            <div class="col-md-4 mb-3"> 
+              <label for="" class="form-label">Upload file</label>
+              <input class="form-control" type="file" id="example-file-input">
             </div>
             <div class="col-md-12 mb-3">
               <button class="btn btn-success me-1">Submit</button>
@@ -148,8 +162,8 @@
                 <div class="col-md-4 mb-2">
                   <label for="">Tax :</label>
                   <select class="form-select">
-                    <option value="no">No</option>
-                    <option value="3">ค่าบริการ 3%</option>
+                    <option value="vat">VAT</option>
+                    <option value="non">Non VAT</option>
                   </select>
                 </div>
                 <div class="col-md-4 mb-2">

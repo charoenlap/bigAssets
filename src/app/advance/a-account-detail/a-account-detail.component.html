@@ -23,18 +23,18 @@
       <div class="block block-rounded">
         <div class="block-content">
           <div class="row">
-            <div class="col-md-12">
-              <div class="row mb-4">
+            <div class="col-md-12 mb-3">
+              <div class="row">
                 <label class="col col-form-label">Advance No : A123456789</label>
-                <label class="col col-form-label">Request Date :</label>
+                <label class="col col-form-label text-end">Request Date :</label>
                 <div class="col">
-                  <input type="date" class="form-control">
+                  <input type="date" class="form-control" value="24/12/2022">
                 </div>
-                <label class="col col-form-label">Status : Waiting Approve</label>
+                <label class="col col-form-label">Status : Approve</label>
               </div>
             </div>
-            <div class="col-md-12">
-              <div class="row mb-4">
+            <div class="col-md-12 mb-3">
+              <div class="row">
                 <div class="col">
                   <label class="form-label">Payment Type :</label>
                   <select name="" id="" class="form-select">
@@ -42,42 +42,46 @@
                   </select>
                 </div>
                 <div class="col">
-                  <label for="" class="form-label"></label>
+                  <label class="form-label">:</label>
                   <select name="" id="" class="form-select">
                     <option value="">Head Office</option>
                   </select>
                 </div>
                 <div class="col">
-                  <label class="form-label">Advance Type : Waiting Approve</label>
+                  <label class="form-label">Advance Type :</label>
                   <select name="" id="" class="form-select">
-                    <option value=""></option>
+                    <option value="">General</option>
                   </select>
                 </div>
               </div>
             </div>
-            <div class="col-md-12">
-              <div class="row mb-4">
+            <div class="col-md-12 mb-3">
+              <div class="row">
                 <div class="col">
                   <label class="form-label">Request For :</label>
                   <select name="" id="" class="form-select">
-                    <option value="">Transfer</option>
+                    <option value="">Employee</option>
                   </select>
                 </div>
                 <div class="col">
                   <label class="form-label">Pay to :</label>
                   <select name="" id="" class="form-select">
-                    <option value=""></option>
+                    <option value="">ARS : Miss Lorem ipsum</option>
                   </select>
                 </div>
               </div>
             </div>
             <div class="col-md-12">
-              <div class="row mb-4">
+              <label class="form-label">Cost center :</label>
+            </div>
+            <div class="col-md-12 mb-3">
+              <div class="row">
                 <div class="col">
-                  <label class="form-label">Cost center :</label>
-                  <input type="date" class="form-control">
+                  <select name="" id="" class="form-select">
+                    <option value="">100100100 : ACCOUNTING</option>
+                  </select>
                 </div>
-                <label class="col col-form-label">Created by :</label>
+                <label class="col col-form-label">Created by : Miss Lorem ipsum 10010212</label>
               </div>
             </div>
           </div>
@@ -92,30 +96,24 @@
                   <tr>
                     <th></th>
                     <th>Description</th>
+                    <th>CostCenter</th>
                     <th>Amount</th>
-                    <th>Vat</th>
-                    <th>Wht</th>
+                    <th>Base VAT</th>
+                    <th>VAT</th>
+                    <th>%WHT</th>
+                    <th>Absorb</th>
+                    <th>WHT</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="text-center"><a href="#">1</a></td>
-                    <td>...</td>
+                    <td class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large-two">1</a></td>
+                    <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, sed.</td>
+                    <td>123456789</td>
                     <td>1,000.00</td>
                     <td></td>
                     <td></td>
-                  </tr>
-                  <tr>
-                    <td class="text-center"><a href="#">2</a></td>
-                    <td>...</td>
-                    <td>1,000.00</td>
                     <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="text-center"><a href="#">3</a></td>
-                    <td>...</td>
-                    <td>1,000.00</td>
                     <td></td>
                     <td></td>
                   </tr>
@@ -123,34 +121,87 @@
                 <tfoot>
                   <tr>
                     <td colspan="3"></td>
-                    <td>Total amount (Include VAT) :</td>
-                    <td>Total Withholding Tax :</td>
+                    <td colspan="3">Total amount (Include VAT) :</td>
+                    <td colspan="3">Total Withholding Tax :</td>
                   </tr>
                   <tr>
                     <td colspan="3"></td>
-                    <td>Total Base VAT :</td>
-                    <td>Total Withholding Tax - BIG Absorb :</td>
+                    <td colspan="3">Total Base VAT :</td>
+                    <td colspan="3">Total Withholding Tax - BIG Absorb :</td>
                   </tr>
                   <tr>
                     <td colspan="3"></td>
-                    <td>Total VAT :</td>
-                    <td>Total expense :</td>
+                    <td colspan="3">Total VAT :</td>
+                    <td colspan="3">Total expense :</td>
                   </tr>
                 </tfoot>
               </table>
             </div>
             <div class="col-md-12 mb-3 text-end">
-              <button class="btn btn-primary btn-sm"><i class="fa fa-print"></i> Print</button>
+              <button class="btn btn-info me-3"><i class="fa fa-file"></i> Check File Upload</button>
+              <button class="btn btn-primary"><i class="fa fa-print"></i> Print</button>
             </div>
             <div class="col-md-6 mb-3">
-              <button class="btn btn-success me-1">Approve</button>
-              <button class="btn btn-danger">Reject</button>
+              <button class="btn btn-danger me-1">AC-Reject</button>
+              <button class="btn btn-warning me-1">AC-Not Send to SAP</button>
+              <button class="btn btn-primary me-1">AC-Approve > SAP</button>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- END Page Content -->
+    <!-- Extra Large Block Modal -->
+    <div class="modal" id="modal-block-extra-large-two" tabindex="-1" role="dialog" aria-labelledby="modal-block-extra-large" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="block block-rounded block-themed block-transparent mb-0">
+            <div class="block-header bg-primary-dark">
+              <h3 class="block-title">Advance Voucher Details</h3>
+              <div class="block-options">
+                <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-fw fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="block-content">
+              <div class="row">
+                <div class="col-md-12 mb-2">
+                  <label for="">Purpose For :</label>
+                  <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea> 
+                </div>
+                <div class="col-md-6 mb-2">
+                  <label for="">Amount per Invoice :</label>
+                  <input type="number" class="form-control">
+                  (Including VAT)
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 mb-2">
+                  <label for="">Tax :</label>
+                  <select class="form-select">
+                    <option value="vat">VAT</option>
+                    <option value="non">Non VAT</option>
+                  </select>
+                </div>
+                <div class="col-md-4 mb-2">
+                  <label for="">Withholding Tax :</label>
+                  <select class="form-select">
+                    <option value="no">No</option>
+                    <option value="3">ค่าบริการ 3%</option>
+                  </select>
+                </div>
+              </div>  
+            </div>
+            <div class="block-content block-content-full text-end bg-body">
+              <button type="button" class="btn btn-sm btn-alt-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Extra Large Block Modal -->
   </main>
   <app-footer></app-footer>
 </div>

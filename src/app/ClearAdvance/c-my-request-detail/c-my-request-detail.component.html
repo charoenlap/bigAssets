@@ -44,10 +44,23 @@
           <div class="row mb-3">
             <div class="col-md-6">
               <label for="" class="form-label">For Advance No :</label>
-              <input type="date" class="form-control">
+              <select name="" id="" class="form-select">
+                <option value=""></option>
+              </select>
             </div>
+          </div>
+          <div class="row mb-3">
             <div class="col-md-6">
               <label for="" class="form-label">Advance Amount :</label>
+              <div class="input-group">
+                <input type="email" class="form-control" id="example-group2-input2" name="example-group2-input2">
+                <span class="input-group-text">
+                  Baht
+                </span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label">Name :</label>
               <input type="text" class="form-control">
             </div>
           </div>
@@ -57,8 +70,7 @@
         <div class="block-content">
           <div class="row">
             <div class="col-md-12 mb-3">
-              <button type="button" class="btn btn-primary btn-sm push" data-bs-toggle="modal"
-                data-bs-target="#modal-block-extra-large-two"><i class="fa fa-plus"></i> add</button>
+              <button type="button" class="btn btn-primary btn-sm push" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large-two"><i class="fa fa-plus"></i> add</button>
             </div>
             <div class="col-md-12 mb-3">
               <table class="table table-bordered mb-0">
@@ -70,7 +82,7 @@
                     <th>Description</th>
                     <th>Amount</th>
                     <th>VAT</th>
-                    <th>WHY</th>
+                    <th>WHT</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -108,6 +120,10 @@
                 </tfoot>
               </table>
             </div>
+            <div class="col-md-4 mb-3"> 
+              <label for="" class="form-label">Upload file</label>
+              <input class="form-control" type="file" id="example-file-input">
+            </div>
             <div class="col-md-12 mb-3">
               <button class="btn btn-success me-1">Submit</button>
               <button class="btn btn-primary">Save Draft</button>
@@ -125,7 +141,7 @@
         <div class="modal-content">
           <div class="block block-rounded block-themed block-transparent mb-0">
             <div class="block-header bg-primary-dark">
-              <h3 class="block-title">Advance Voucher Details</h3>
+              <h3 class="block-title">Clear Advance Voucher Details</h3>
               <div class="block-options">
                 <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
                   <i class="fa fa-fw fa-times"></i>
@@ -133,30 +149,72 @@
               </div>
             </div>
             <div class="block-content">
-              <div class="row">
-                <div class="col-md-12 mb-2">
-                  <label for="">Purpose For :</label>
-                  <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
-                </div>
-                <div class="col-md-6 mb-2">
-                  <label for="">Amount per Invoice :</label>
-                  <input type="number" class="form-control">
-                  (Including VAT)
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="" class="form-label">Invoice Date :</label>
+                  <input type="date" class="form-control">
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-4 mb-2">
-                  <label for="">Tax :</label>
-                  <select class="form-select">
-                    <option value="no">No</option>
-                    <option value="3">ค่าบริการ 3%</option>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="" class="form-label">Description :</label>
+                  <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="" class="form-label">Expense Type :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">1-Expense</option>
                   </select>
                 </div>
-                <div class="col-md-4 mb-2">
-                  <label for="">Withholding Tax :</label>
-                  <select class="form-select">
-                    <option value="no">No</option>
-                    <option value="3">ค่าบริการ 3%</option>
+                <div class="col-md-6">
+                  <label for="" class="form-label">Cost Center :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">100110111 : ACCOUNTING</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="" class="form-label">Categories :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Travelling : Employee Travelling - Local - 123456789</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="" class="form-label">Amount per Invoice :</label>
+                  <div class="input-group">
+                    <input type="email" class="form-control" id="example-group2-input2" name="example-group2-input2">
+                    <span class="input-group-text">
+                      Including VAT
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="" class="form-label">Invoice Number :</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="" class="form-label">VAT :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">VAT</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Withholding TAX:</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">ค่าบริการ 3%</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">BIG Absorb :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">NO</option>
                   </select>
                 </div>
               </div>
