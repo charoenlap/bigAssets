@@ -22,9 +22,17 @@
       <div class="content">
         <div class="block block-rounded">
           <div class="block-content">
-            <div class="row">
-              <div class="col-md-6 mb-3">
+            <div class="row mb-3">
+              <div class="col-md-6">
                 <p>Claim No : <b>E202210111</b> Date : <b>16-12-22</b></p>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <label for="" class="form-label">EES Type :</label>
+                <select name="" id="" class="form-select">
+                  <option value="">General</option>
+                </select>
               </div>
             </div>
           </div>
@@ -48,27 +56,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="text-center"><a href="#">1</a></td>
-                      <td><a href="">16-12-2022</a></td>
-                      <td>Type</td>
-                      <td>1234</td>
-                      <td>...</td>
-                      <td>1,000.00</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td class="text-center"><a href="#">2</a></td>
-                      <td><a href="">16-12-2022</a></td>
-                      <td>Type</td>
-                      <td>1234</td>
-                      <td>...</td>
-                      <td>1,000.00</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td class="text-center"><a href="#">3</a></td>
+                      <td class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large">1</a></td>
                       <td><a href="">16-12-2022</a></td>
                       <td>Type</td>
                       <td>1234</td>
@@ -98,7 +86,8 @@
                 </table>
               </div>
               <div class="col-md-12 mb-3 text-end">
-                <button class="btn btn-primary btn-sm"><i class="fa fa-print"></i> Print</button>
+                <button class="btn btn-info me-3"><i class="fa fa-file"></i> Check File Upload</button>
+                <button class="btn btn-primary"><i class="fa fa-print"></i> Print</button>
               </div>
               <div class="col-md-12 mb-3">
                 <button class="btn btn-success me-1">Approve</button>
@@ -109,6 +98,71 @@
         </div>
       </div>
       <!-- END Page Content -->
+
+      <!-- Extra Large Block Modal -->
+      <div class="modal" id="modal-block-extra-large" tabindex="-1" role="dialog" aria-labelledby="modal-block-extra-large" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+            <div class="block block-rounded block-themed block-transparent mb-0">
+              <div class="block-header bg-primary-dark">
+                <h3 class="block-title">Add</h3>
+                <div class="block-options">
+                  <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-fw fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="block-content">
+                <div class="row">
+                  <div class="col-md-12 mb-2">
+                    <label for="">Travel Date :</label>
+                    <input type="date" class="form-control">
+                  </div>
+                  <div class="col-md-12 mb-2">
+                    <label for="">Text :</label>
+                    <textarea name="" id="" cols="30" rows="5" class="form-control" maxlength="50"></textarea>
+                  </div>
+                  <div class="col-md-12 mb-2">
+                    <label for="">Text2 :</label>
+                    <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <label for="">Start :</label>
+                    <select name="" id="" class="form-select">
+                      <option value=""></option>
+                    </select>  
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <label for="">End :</label>
+                    <select name="" id="" class="form-select">
+                      <option value=""></option>
+                    </select>  
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <label for="">Distance :</label>
+                    <input type="text" class="form-control">  
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" value="" id="example-switch-default1" name="example-switch-default1" checked="">
+                      <label class="form-check-label" for="example-switch-default1">Claim</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" value="" id="example-switch-default1" name="example-switch-default1" checked="">
+                      <label class="form-check-label" for="example-switch-default1">Per diem</label>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+              <div class="block-content block-content-full text-end bg-body">
+                <button type="button" class="btn btn-sm btn-alt-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Extra Large Block Modal -->
     </main>
     <app-footer></app-footer>
   </div>

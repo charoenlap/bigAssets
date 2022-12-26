@@ -31,7 +31,7 @@
               <div class="col">
                 <label for="" class="form-label">EES Type :</label>
                 <select name="" id="" class="form-select">
-                  <option value=""></option>
+                  <option value="">General</option>
                 </select>
               </div>
               <div class="col">
@@ -41,9 +41,140 @@
                 </select>
               </div>
             </div>
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <label for="" class="form-label">Travelling or Expense</label>
+                <select name="" id="" class="form-select" (change)="onTypeChange($event)">
+                  <option value="travelling">Travelling</option>
+                  <option value="expense">Expense</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="block block-rounded">
+        <div class="block block-rounded" *ngIf="showTravelling">
+          <div class="block-content">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <button type="button" class="btn btn-primary btn-sm push" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large"><i class="fa fa-plus"></i> add</button>
+              </div>
+              <div class="col-md-12 mb-3">
+                <table class="table table-bordered mb-0">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Objectives</th>
+                      <th>form</th>
+                      <th>to</th>
+                      <th>Km.</th>
+                      <th>เช้า</th>
+                      <th>เที่ยง</th>
+                      <th>เย็น</th>
+                      <th>ค้างคืน</th>
+                      <th>รวม</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="">16-12-2022</a></td>
+                      <td>test</td>
+                      <td>Big Head office</td>
+                      <td>Big Plant 1</td>
+                      <td>100</td>
+                      <td></td>
+                      <td></td>
+                      <td>200</td>
+                      <td></td>
+                      <td>200</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <td colspan="4"></td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>200</td>
+                    <td>0</td>
+                    <td>200</td>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="" class="form-label">Upload file</label>
+                <input class="form-control" type="file" id="example-file-input">
+              </div>
+              <div class="col-md-12 mb-3">
+                <button class="btn btn-success me-1">Submit</button>
+                <button class="btn btn-primary">Save Draft</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block block-rounded" *ngIf="showExpense">
+          <div class="block-content">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <button type="button" class="btn btn-primary btn-sm push" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large-two"><i class="fa fa-plus"></i> add</button>
+              </div>
+              <div class="col-md-12 mb-3">
+                <table class="table table-bordered mb-0">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Date</th>
+                      <th>Type</th>
+                      <th>Invoice</th>
+                      <th>Description</th>
+                      <th>Amount</th>
+                      <th>VAT</th>
+                      <th>WHT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large-two">1</a></td>
+                      <td><a href="">16-12-2022</a></td>
+                      <td>Type</td>
+                      <td>1234</td>
+                      <td>...</td>
+                      <td>1,000.00</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <td colspan="4"></td>
+                    <td colspan="2">Total amount (Include VAT) :</td>
+                    <td colspan="2">Total Withholding Tax :</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"></td>
+                    <td colspan="2">Total Base VAT :</td>
+                    <td colspan="2">Total Withholding Tax - BIG Absorb :</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4"></td>
+                    <td colspan="2">Total VAT :</td>
+                    <td colspan="2">Total expense :</td>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="" class="form-label">Upload file</label>
+                <input class="form-control" type="file" id="example-file-input">
+              </div>
+              <div class="col-md-12 mb-3">
+                <button class="btn btn-success me-1">Submit</button>
+                <button class="btn btn-primary">Save Draft</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="block block-rounded">
           <ul class="nav nav-tabs nav-tabs-block" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active" id="btabs-static-home-tab" data-bs-toggle="tab" data-bs-target="#btabs-static-home" role="tab" aria-controls="btabs-static-home" aria-selected="true">TRAVELLING</button>
@@ -172,7 +303,7 @@
               </div> 
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- END Page Content -->
 
@@ -197,7 +328,11 @@
                   </div>
                   <div class="col-md-12 mb-2">
                     <label for="">Text :</label>
-                    <textarea name="" id="" cols="30" rows="5" class="form-control">text</textarea>
+                    <textarea name="" id="" cols="30" rows="5" class="form-control" maxlength="50"></textarea>
+                  </div>
+                  <div class="col-md-12 mb-2">
+                    <label for="">Text2 :</label>
+                    <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
                   </div>
                   <div class="col-md-4 mb-2">
                     <label for="">Start :</label>
@@ -270,6 +405,10 @@
                   </div>
                   <div class="col-md-12 mb-2">
                     <label for="">Description :</label>
+                    <textarea name="" id="" cols="30" rows="3" class="form-control" maxlength="50"></textarea> 
+                  </div>
+                  <div class="col-md-12 mb-2">
+                    <label for="">Description2 :</label>
                     <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea> 
                   </div>
                   <div class="col-md-12 mb-2">
