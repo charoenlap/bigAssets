@@ -14,4 +14,7 @@ export class MyRequestComponent {
       {claim:"12345",date:"16-12-22",ini:"ADR",amount:"400",status:"new"}
     ];
   }
+  async delete(){
+    alert('Do you want to delete ?');
+  }
 }

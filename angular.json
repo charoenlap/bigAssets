@@ -30,10 +30,14 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/theme/css/dashmix.min.css",
               "src/styles.scss"
             ],
             "scripts": [
-              
+              "node_modules/jquery/dist/jquery.js",
+              "src/assets/theme/js/dashmix.app.min.js",
+              "src/assets/theme/js/plugins/chart.js/chart.min.js",
+              "src/assets/theme/js/pages/be_pages_dashboard.min.js"
             ]
           },
           "configurations": {
@@ -97,7 +101,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           }
         }
       }

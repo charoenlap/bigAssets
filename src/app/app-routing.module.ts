@@ -38,7 +38,7 @@ const routes: Routes = [
   { path: 'userGroup', component: UserGroupComponent },
   { path: 'user', component: UserComponent },
   { path: 'te/myRequest', component: MyRequestComponent },
-  { path: 'te/myRequest/detail', component: FormRequestComponent },
+  { path: 'te/myRequest/form/add', component: FormRequestComponent },
   { path: 'te/teamRequest', component: TeamRequestComponent },
   { path: 'te/teamRequest/detail', component: RequestApproveComponent },
   { path: 'te/account', component: AccountComponent },

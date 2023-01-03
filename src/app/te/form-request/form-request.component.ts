@@ -9,6 +9,7 @@ export class FormRequestComponent {
   showElement = false;
   showTravelling = true;
   showExpense = false;
+
   async onOptionChange(event: Event) {
     const selectElement = event.target as HTMLSelectElement;
     const selectedOption = selectElement.value;
@@ -18,15 +19,17 @@ export class FormRequestComponent {
       this.showElement = false;
     }
   }
-  async onTypeChange(event: Event){
-    const selectElement = event.target as HTMLSelectElement;
-    const value = selectElement.value;
-    if(value == "travelling"){
-      this.showTravelling = true;
-      this.showExpense = false;
-    }else if(value == "expense"){
-      this.showExpense = true;
-      this.showTravelling = false;
-    }
-  }
+
+
+  // async onTypeChange(event: Event){
+  //   const selectElement = event.target as HTMLSelectElement;
+  //   const value = selectElement.value;
+  //   if(value == "travelling"){
+  //     this.showTravelling = true;
+  //     this.showExpense = false;
+  //   }else if(value == "expense"){
+  //     this.showExpense = true;
+  //     this.showTravelling = false;
+  //   }
+  // }
 }

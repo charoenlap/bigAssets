@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   ngOnDestroy(){
-    window.location.reload();
+    // window.location.reload();
   }
 }
