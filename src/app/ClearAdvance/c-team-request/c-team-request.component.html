@@ -1,5 +1,4 @@
-<div id="page-container"
-  class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
+<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed">
   <app-header></app-header>
   <main id="main-container">
     <!-- Hero -->
@@ -35,6 +34,7 @@
               <table class="table table-bordered">
                 <thead>
                   <tr class="table-dark">
+                    <th>Advance No</th>
                     <th>Clear Advance No</th>
                     <th>Date</th>
                     <th>INITIALS</th>
@@ -45,6 +45,7 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let data of data">
+                    <td>{{data.advanceNo}}</td>
                     <td><a href="#" routerLink="/clearAdvance/temeRequest/detail">{{data.claim}}</a></td>
                     <td>{{data.date}}</td>
                     <td>{{data.ini}}</td>
