@@ -5,10 +5,10 @@
     <div class="bg-body-light">
       <div class="content content-full">
         <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
-          <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Travelling & Expense</h1>
+          <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Clear Advance</h1>
           <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item">Travelling & Expense</li>
+              <li class="breadcrumb-item">Clear Advance</li>
               <li class="breadcrumb-item active" aria-current="page">Lists</li>
             </ol>
           </nav>
@@ -23,7 +23,7 @@
         <div class="block-content">
           <div class="row mb-3">
             <div class="col-md-3">
-              <a href="#" class="btn btn-primary" routerLink="/clearAdvance/myRequest/detail"><i class="fa fa-plus"></i>  New Clear Advance</a>
+              <a href="#" class="btn btn-primary" routerLink="/clearAdvance/myRequest/add"><i class="fa fa-plus"></i>  New Clear Advance</a>
             </div>
             <div class="col-md-9">
               <div class="row">
@@ -56,7 +56,7 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let data of data">
-                    <td><a href="#" routerLink="/clearAdvance/myRequest/detail">{{data.claim}}</a></td>
+                    <td><a href="#" routerLink="/clearAdvance/myRequest/edit">{{data.claim}}</a></td>
                     <td>{{data.date}}</td>
                     <td>{{data.ini}}</td>
                     <td>{{data.amount}}</td>

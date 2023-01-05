@@ -28,17 +28,26 @@
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col">
+              <div class="col-md-6">
                 <label for="" class="form-label">EES Type :</label>
                 <select name="" id="" class="form-select">
                   <option value="">General</option>
                 </select>
               </div>
-              <div class="col">
-                <label for="" class="form-label">Request For</label>
-                <select name="" id="" class="form-select">
-                  <option value="">นาย สมชาย ใจดี</option>
-                </select>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="" class="form-label">Request For</label>
+                  </div>
+                  <div class="col-md-6">
+                    <select name="" id="" class="form-select">
+                      <option value="">KIS : kitt sap</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="" class="col col-form-label">| 20231111 | HUMAN CAPITAL</label>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- <div class="row mb-3">
@@ -207,6 +216,18 @@
                     </thead>
                     <tbody>
                       <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <!-- <tr>
                         <td><a href="">16-12-2022</a></td>
                         <td>test</td>
                         <td>Big Head office</td>
@@ -217,24 +238,53 @@
                         <td>200</td>
                         <td></td>
                         <td>200</td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                     <tfoot>
                       <tr>
                         <td colspan="4"></td>
-                        <td>100</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>200</td>
                         <td>0</td>
-                        <td>200</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                       </tr>
                     </tfoot>
                   </table> 
                 </div>
-                <div class="col-md-4 mb-3"> 
-                  <label for="" class="form-label">Upload file</label>
-                  <input class="form-control" type="file" id="example-file-input">
+                <div class="col-md-12 mb-3"> 
+                  <div class="row mb-3">
+                    <div class="col-md-12">
+                      <label for="" class="form-label">Upload file</label>
+                    </div>
+                    <div class="col-md-4">
+                      <input class="form-control" type="file" id="example-file-input">
+                    </div>
+                    <div class="col-md-8">
+                      <button class="btn btn-primary">Upload</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="10%" class="text-center">#</th>
+                            <th>ATTACHMENT</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">1</td>
+                            <td>images.jpg</td>
+                            <td><a href="#" class="btn btn-danger" (click)="deleteImage()"><i class="fa fa-trash"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-md-12 mb-3">
                   <button class="btn btn-success me-1">Submit</button>
@@ -263,12 +313,12 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large-two">1</a></td>
-                        <td><a href="">16-12-2022</a></td>
-                        <td>Type</td>
-                        <td>1234</td>
-                        <td>...</td>
-                        <td>1,000.00</td>
+                        <td class="text-center"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td></td>
                         <td></td>
                       </tr>
@@ -291,9 +341,38 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="col-md-4 mb-3"> 
-                  <label for="" class="form-label">Upload file</label>
-                  <input class="form-control" type="file" id="example-file-input">
+                <div class="col-md-12 mb-3"> 
+                  <div class="row mb-3">
+                    <div class="col-md-12">
+                      <label for="" class="form-label">Upload file</label>
+                    </div>
+                    <div class="col-md-4">
+                      <input class="form-control" type="file" id="example-file-input">
+                    </div>
+                    <div class="col-md-8">
+                      <button class="btn btn-primary">Upload</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="10%" class="text-center">#</th>
+                            <th>ATTACHMENT</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">1</td>
+                            <td>images.jpg</td>
+                            <td><a href="#" class="btn btn-danger" (click)="deleteImage()"><i class="fa fa-trash"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-md-12 mb-3">
                   <button class="btn btn-success me-1">Submit</button>

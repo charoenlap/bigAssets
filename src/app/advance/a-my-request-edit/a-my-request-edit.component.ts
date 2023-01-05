@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-a-form-my-request-add',
-  templateUrl: './a-form-my-request-add.component.html',
-  styleUrls: ['./a-form-my-request-add.component.scss']
+  selector: 'app-a-my-request-edit',
+  templateUrl: './a-my-request-edit.component.html',
+  styleUrls: ['./a-my-request-edit.component.scss']
 })
-export class AFormMyRequestAddComponent {
+export class AMyRequestEditComponent {
   showEmployee = false;
   showVendor = false;
   async onOptionChange(event: Event) {

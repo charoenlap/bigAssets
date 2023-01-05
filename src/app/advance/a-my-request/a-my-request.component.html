@@ -23,7 +23,7 @@
           <div class="block-content">
             <div class="row mb-3">
               <div class="col-md-3">
-                <a href="#" class="btn btn-primary" routerLink="/advance/myRequest/detail"><i class="fa fa-plus"></i>  New Advance</a>
+                <a href="#" class="btn btn-primary" routerLink="/advance/myRequest/add"><i class="fa fa-plus"></i>  New Advance</a>
               </div>
               <div class="col-md-9">
                 <div class="row">
@@ -59,7 +59,7 @@
                   </thead>
                   <tbody>
                     <tr *ngFor="let data of data">
-                      <td><a href="#" routerLink="/advance/myRequest/detail">{{data.claim}}</a></td>
+                      <td><a href="#" routerLink="/advance/myRequest/edit">{{data.claim}}</a></td>
                       <td>{{data.date}}</td>
                       <td>{{data.ini}}</td>
                       <td>{{data.amount}}</td>

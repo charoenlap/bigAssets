@@ -1,0 +1,393 @@
+<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
+<app-header></app-header>
+<main id="main-container">
+  <!-- Hero -->
+  <div class="bg-body-light">
+    <div class="content content-full">
+      <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+        <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Travelling & Expense</h1>
+        <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Travelling & Expense</li>
+            <li class="breadcrumb-item"><a href="#" routerLink="/te/myRequest">Lists</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edit</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- END Hero -->
+  <!-- Page Content -->
+  <div class="content">
+    <div class="block block-rounded">
+      <div class="block-content">
+        <div class="row">
+          <div class="col-12">
+            <p>Claim No. : <b>Draft</b></p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <label for="" class="form-label">EES Type :</label>
+            <select name="" id="" class="form-select">
+              <option value="">General</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="" class="form-label">Request For</label>
+            <select name="" id="" class="form-select">
+              <option value="">นาย สมชาย ใจดี</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block block-rounded">
+      <ul class="nav nav-tabs nav-tabs-block" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="btabs-static-home-tab" data-bs-toggle="tab" data-bs-target="#btabs-static-home" role="tab" aria-controls="btabs-static-home" aria-selected="true">TRAVELLING</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="btabs-static-profile-tab" data-bs-toggle="tab" data-bs-target="#btabs-static-profile" role="tab" aria-controls="btabs-static-profile" aria-selected="false" tabindex="-1">EES</button>
+        </li>
+      </ul>
+      <div class="block-content tab-content">
+        <div class="tab-pane active" id="btabs-static-home" role="tabpanel" aria-labelledby="btabs-static-home-tab" tabindex="0">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <button type="button" class="btn btn-primary btn-sm push" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large"><i class="fa fa-plus"></i> add</button>
+            </div>
+            <div class="col-md-12 mb-3">
+              <table class="table mb-0">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Objectives</th>
+                    <th>form</th>
+                    <th>to</th>
+                    <th>Km.</th>
+                    <th>เช้า</th>
+                    <th>เที่ยง</th>
+                    <th>เย็น</th>
+                    <th>ค้างคืน</th>
+                    <th>รวม</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="">16-12-2022</a></td>
+                    <td>test</td>
+                    <td>Big Head office</td>
+                    <td>Big Plant 1</td>
+                    <td>100</td>
+                    <td></td>
+                    <td></td>
+                    <td>200</td>
+                    <td></td>
+                    <td>200</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <td colspan="4"></td>
+                  <td>100</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>200</td>
+                  <td>0</td>
+                  <td>200</td>
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="" class="form-label">Upload file</label>
+              <input class="form-control" type="file" id="example-file-input">
+            </div>
+            <div class="col-md-12 mb-3">
+              <button class="btn btn-success me-1">Submit</button>
+              <button class="btn btn-primary">Save Draft</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="btabs-static-profile" role="tabpanel" aria-labelledby="btabs-static-profile-tab" tabindex="0">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <button type="button" class="btn btn-primary btn-sm push" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large-two"><i class="fa fa-plus"></i> add</button>
+            </div>
+            <div class="col-md-12 mb-3">
+              <table class="table mb-3">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Invoice</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>VAT</th>
+                    <th>WHT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large-two">1</a></td>
+                    <td><a href="">16-12-2022</a></td>
+                    <td>Type</td>
+                    <td>1234</td>
+                    <td>...</td>
+                    <td>1,000.00</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mb-0">
+                <tbody>
+                  <tr>
+                    <td colspan="2">Total amount (Include VAT) :</td>
+                    <td colspan="2">Total Withholding Tax :</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Total Base VAT :</td>
+                    <td colspan="2">Total Withholding Tax - BIG Absorb :</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Total VAT :</td>
+                    <td colspan="2">Total expense :</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="" class="form-label">Upload file</label>
+              <input class="form-control" type="file" id="example-file-input">
+            </div>
+            <div class="col-md-12 mb-3">
+              <button class="btn btn-success me-1">Submit</button>
+              <button class="btn btn-primary">Save Draft</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Page Content -->
+  <!-- Extra Large Block Modal -->
+  <div class="modal" id="modal-block-extra-large" tabindex="-1" role="dialog" aria-labelledby="modal-block-extra-large" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="block block-rounded block-themed block-transparent mb-0">
+          <div class="block-header bg-primary-dark">
+            <h3 class="block-title">Add</h3>
+            <div class="block-options">
+              <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa fa-fw fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <div class="block-content">
+            <div class="row">
+              <div class="col-md-12 mb-2">
+                <label for="">Travel Date :</label>
+                <input type="date" class="form-control">
+              </div>
+              <div class="col-md-12 mb-2">
+                <label for="">Text :</label>
+                <textarea name="" id="" cols="30" rows="5" class="form-control" maxlength="50"></textarea>
+              </div>
+              <div class="col-md-12 mb-2">
+                <label for="">Text2 :</label>
+                <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="">Start :</label>
+                <select name="" id="" class="form-select">
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="">End :</label>
+                <select name="" id="" class="form-select">
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="">Distance :</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-md-12">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" value="" id="example-switch-default1" name="example-switch-default1" checked="">
+                  <label class="form-check-label" for="example-switch-default1">Claim</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" value="" id="example-switch-default1" name="example-switch-default1" checked="">
+                  <label class="form-check-label" for="example-switch-default1">Per diem</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-content block-content-full text-end bg-body">
+            <button type="button" class="btn btn-sm btn-alt-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Extra Large Block Modal -->
+  <!-- Extra Large Block Modal -->
+  <div class="modal" id="modal-block-extra-large-two" tabindex="-1" role="dialog" aria-labelledby="modal-block-extra-large" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="block block-rounded block-themed block-transparent mb-0">
+          <div class="block-header bg-primary-dark">
+            <h3 class="block-title">Add</h3>
+            <div class="block-options">
+              <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa fa-fw fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <div class="block-content">
+            <div class="row">
+              <div class="col-md-4 mb-2">
+                <label for="">Date :</label>
+                <input type="date" class="form-control">
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="">Expense Type :</label>
+                <select name="" id="" class="form-select">
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="">Cost Center :</label>
+                <select name="" id="" class="form-select">
+                  <option value="">ทดสอบ</option>
+                </select>
+              </div>
+              <div class="col-md-12 mb-2">
+                <label for="">Description :</label>
+                <textarea name="" id="" cols="30" rows="3" class="form-control" maxlength="50"></textarea>
+              </div>
+              <div class="col-md-12 mb-2">
+                <label for="">Description2 :</label>
+                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+              </div>
+              <div class="col-md-12 mb-2">
+                <label for="">Categories :</label>
+                <select name="" id="" class="form-select">
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="col-md-6 mb-2">
+                <label for="">Amount per Invoice :</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-md-6 mb-2">
+                <label for="">Invoice Number :</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="">Tax :</label>
+                <select name="" id="" class="form-select">
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-2">
+                <label for="">Withholding Tax :</label>
+                <select class="form-select" (change)="onOptionChange($event)">
+                  <option value="no">No</option>
+                  <option value="3">ค่าบริการ 3%</option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-2" *ngIf="showElement">
+                <label for="">BIG Absorb :</label>
+                <select class="form-select">
+                  <option value="yes">YES</option>
+                  <option value="no">NO</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="block-content block-content-full text-end bg-body">
+            <button type="button" class="btn btn-sm btn-alt-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Extra Large Block Modal -->
+  <!-- Extra Large Block Modal -->
+  <div class="modal" id="modal-preview" tabindex="-1" role="dialog" aria-labelledby="modal-block-extra-large" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="block block-rounded block-themed block-transparent mb-0">
+          <div class="block-header bg-primary-dark">
+            <h3 class="block-title">Preview</h3>
+            <div class="block-options">
+              <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa fa-fw fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <div class="block-content">
+            <table class="table table-bordered mb-0">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Invoice</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                  <th>VAT</th>
+                  <th>WHT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">1</td>
+                  <td>16-12-2022</td>
+                  <td>Type</td>
+                  <td>1234</td>
+                  <td>...</td>
+                  <td>1,000.00</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <tfoot>
+              <tr>
+                <td colspan="4"></td>
+                <td colspan="2">Total amount (Include VAT) :</td>
+                <td colspan="2">Total Withholding Tax :</td>
+              </tr>
+              <tr>
+                <td colspan="4"></td>
+                <td colspan="2">Total Base VAT :</td>
+                <td colspan="2">Total Withholding Tax - BIG Absorb :</td>
+              </tr>
+              <tr>
+                <td colspan="4"></td>
+                <td colspan="2">Total VAT :</td>
+                <td colspan="2">Total expense :</td>
+              </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="block-content block-content-full text-end bg-body">
+            <button type="button" class="btn btn-sm btn-alt-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Extra Large Block Modal -->
+</main>
+<app-footer></app-footer>
+</div>

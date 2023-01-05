@@ -1,0 +1,197 @@
+<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
+  <app-header></app-header>
+  <main id="main-container">
+    <!-- Hero -->
+    <div class="bg-body-light">
+      <div class="content content-full">
+        <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+          <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Advance</h1>
+          <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">Advance</li>
+              <li class="breadcrumb-item">Lists</li>
+              <li class="breadcrumb-item active" aria-current="page">Add</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- END Hero -->
+
+    <!-- Page Content -->
+    <div class="content">
+        <div class="block block-rounded">
+            <div class="block-content">
+                <div class="row">
+                    <div class="col-md-12">
+                      <p>Advance No : <b>Draft</b></p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Request For :</label>
+                        <select name="" id="" class="form-select" (change)="onOptionChange($event)">
+                            <option value="">-- Select --</option>
+                            <option value="employee">Employee</option>
+                            <option value="vendor">Vendor</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6" *ngIf="showEmployee">
+                        <label for="" class="form-label">Pay to :</label>
+                        <select name="" id="" class="form-select">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="col-md-6" *ngIf="showVendor">
+                      <input type="text" class="form-control" placeholder="Vendor Name.">
+                      <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Vendor Address"></textarea>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Payment Type :</label>
+                        <select name="" id="" class="form-select">
+                          <option value="">-- Select --</option>
+                          <option value="">Transfer</option>
+                          <option value="">Cash</option>
+                          <option value="">Cheque</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Advance Type :</label>
+                        <select name="" id="" class="form-select">
+                            <option value="">General</option>
+                            <option value="">Donation</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                      <label for="" class="form-label">Request Date :</label>
+                      <input type="date" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                      <label for="" class="form-label">Cost center :</label>
+                      <select name="" id="" class="form-select">
+                          <option value="">100100100 : ACCOUNTING</option>
+                      </select>
+                  </div>
+              </div>
+            </div>
+        </div>
+      <div class="block block-rounded">
+        <div class="block-content">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <button type="button" class="btn btn-primary btn-sm push" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large-two"><i class="fa fa-plus"></i> add</button>
+            </div>
+            <div class="col-md-12 mb-3">
+              <table class="table mb-3">
+                <thead>
+                  <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>VAT</th>
+                    <th>WHT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table">
+                <tfoot>
+                  <tr>
+                    <td>Total amount (Include VAT) :</td>
+                    <td>Total Withholding Tax :</td>
+                  </tr>
+                  <tr>
+                    <td>Total Base VAT :</td>
+                    <td>Total Withholding Tax - BIG Absorb :</td>
+                  </tr>
+                  <tr>
+                    <td>Total VAT :</td>
+                    <td>Total expense :</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="col-md-3 mb-3"> 
+              <label for="" class="form-label">Upload file</label>
+              <input class="form-control" type="file" id="example-file-input">
+            </div>
+            <div class="col-md-3 offset-md-6 mb-3"> 
+              <label for="" class="form-label">Direct To</label>
+              <select name="" id="" class="form-select">
+                <option value="">KAL</option>
+              </select>
+            </div>
+            <div class="col-md-12 mb-3">
+              <button class="btn btn-success me-1">Submit</button>
+              <button class="btn btn-primary">Save Draft</button>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Page Content -->
+
+    <!-- Extra Large Block Modal -->
+    <div class="modal" id="modal-block-extra-large-two" tabindex="-1" role="dialog" aria-labelledby="modal-block-extra-large" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="block block-rounded block-themed block-transparent mb-0">
+            <div class="block-header bg-primary-dark">
+              <h3 class="block-title">Advance Voucher Details</h3>
+              <div class="block-options">
+                <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-fw fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="block-content">
+              <div class="row">
+                <div class="col-md-12 mb-2">
+                  <label for="">Purpose For :</label>
+                  <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea> 
+                </div>
+                <div class="col-md-6 mb-2">
+                  <label for="">Amount per Invoice :</label>
+                  <input type="number" class="form-control">
+                  (Including VAT)
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 mb-2">
+                  <label for="">Tax :</label>
+                  <select class="form-select">
+                    <option value="vat">VAT</option>
+                    <option value="non">Non VAT</option>
+                  </select>
+                </div>
+                <div class="col-md-4 mb-2">
+                  <label for="">Withholding Tax :</label>
+                  <select class="form-select">
+                    <option value="no">No</option>
+                    <option value="3">ค่าบริการ 3%</option>
+                  </select>
+                </div>
+              </div>  
+            </div>
+            <div class="block-content block-content-full text-end bg-body">
+              <button type="button" class="btn btn-sm btn-alt-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Extra Large Block Modal -->
+  </main>
+  <app-footer></app-footer>
+</div>

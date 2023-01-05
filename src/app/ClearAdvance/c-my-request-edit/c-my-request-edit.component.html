@@ -1,0 +1,231 @@
+<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
+  <app-header></app-header>
+  <main id="main-container">
+    <!-- Hero -->
+    <div class="bg-body-light">
+      <div class="content content-full">
+        <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+          <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Clear Advance</h1>
+          <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">Clear Advance</li>
+              <li class="breadcrumb-item">Lists</li>
+              <li class="breadcrumb-item active" aria-current="page">Add</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- END Hero -->
+
+    <!-- Page Content -->
+    <div class="content">
+      <div class="block block-rounded">
+        <div class="block-content">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Advance No : <b>Draft</b></p>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="" class="form-label">Advance Type :</label>
+              <select name="" id="" class="form-select">
+                <option value="">General</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+                <label for="" class="form-label">Request For :</label>
+                <select name="" id="" class="form-select">
+                  <option value=""></option>
+                </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="" class="form-label">For Advance No :</label>
+              <select name="" id="" class="form-select">
+                <option value=""></option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="" class="form-label">Advance Amount :</label>
+              <div class="input-group">
+                <input type="email" class="form-control" id="example-group2-input2" name="example-group2-input2">
+                <span class="input-group-text">
+                  Baht
+                </span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label">:</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block block-rounded">
+        <div class="block-content">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <button type="button" class="btn btn-primary btn-sm push" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large-two"><i class="fa fa-plus"></i> add</button>
+            </div>
+            <div class="col-md-12 mb-3">
+              <table class="table mb-3">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Invoice</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>VAT</th>
+                    <th>WHT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Total amount (Include VAT) :</td>
+                    <td>Total Withholding Tax :</td>
+                  </tr>
+                  <tr>
+                    <td>Total Base VAT :</td>
+                    <td>Total Withholding Tax - BIG Absorb :</td>
+                  </tr>
+                  <tr>
+                    <td>Total VAT :</td>
+                    <td>Total expense :</td>
+                  </tr>
+                  <tr>
+                    <td>Advance From Company :</td>
+                    <td>Retrun to Company :</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-4 mb-3"> 
+              <label for="" class="form-label">Upload file</label>
+              <input class="form-control" type="file" id="example-file-input">
+            </div>
+            <div class="col-md-12 mb-3">
+              <button class="btn btn-success me-1">Submit</button>
+              <button class="btn btn-primary">Save Draft</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Page Content -->
+
+    <!-- Extra Large Block Modal -->
+    <div class="modal" id="modal-block-extra-large-two" tabindex="-1" role="dialog"
+      aria-labelledby="modal-block-extra-large" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="block block-rounded block-themed block-transparent mb-0">
+            <div class="block-header bg-primary-dark">
+              <h3 class="block-title">Clear Advance Voucher Details</h3>
+              <div class="block-options">
+                <button type="button" class="btn-block-option" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-fw fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="block-content">
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="" class="form-label">Invoice Date :</label>
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="" class="form-label">Description :</label>
+                  <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="" class="form-label">Expense Type :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">1-Expense</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="" class="form-label">Cost Center :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">100110111 : ACCOUNTING</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="" class="form-label">Categories :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Travelling : Employee Travelling - Local - 123456789</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="" class="form-label">Amount per Invoice :</label>
+                  <div class="input-group">
+                    <input type="email" class="form-control" id="example-group2-input2" name="example-group2-input2">
+                    <span class="input-group-text">
+                      Including VAT
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="" class="form-label">Invoice Number :</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="" class="form-label">VAT :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">VAT</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Withholding TAX:</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">ค่าบริการ 3%</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">BIG Absorb :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">NO</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="block-content block-content-full text-end bg-body">
+              <button type="button" class="btn btn-sm btn-alt-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Extra Large Block Modal -->
+  </main>
+  <app-footer></app-footer>
+</div>

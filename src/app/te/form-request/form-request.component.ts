@@ -19,7 +19,9 @@ export class FormRequestComponent {
       this.showElement = false;
     }
   }
-
+  async deleteImage(){
+    
+  }
 
   // async onTypeChange(event: Event){
   //   const selectElement = event.target as HTMLSelectElement;

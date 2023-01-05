@@ -1,320 +1,326 @@
 <div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
-  <app-header></app-header>
-  <main id="main-container">
-    <!-- Hero -->
-    <div class="bg-body-light">
-      <div class="content content-full">
-        <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
-          <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Travelling & Expense</h1>
-          <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">Travelling & Expense</li>
-              <li class="breadcrumb-item">Lists</li>
-              <li class="breadcrumb-item active" aria-current="page">Detail</li>
-            </ol>
-          </nav>
-        </div>
+<app-header></app-header>
+<main id="main-container">
+  <!-- Hero -->
+  <div class="bg-body-light">
+    <div class="content content-full">
+      <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+        <h1 class="flex-grow-1 fs-3 fw-semibold my-2 my-sm-3">Clear Advance</h1>
+        <nav class="flex-shrink-0 my-2 my-sm-0 ms-sm-3" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Clear Advance</li>
+            <li class="breadcrumb-item">Lists</li>
+            <li class="breadcrumb-item active" aria-current="page">Detail</li>
+          </ol>
+        </nav>
       </div>
     </div>
-    <!-- END Hero -->
-
-    <!-- Page Content -->
-    <div class="content">
-      <div class="block block-rounded">
-        <div class="block-content">
-          <div class="row">
-            <div class="col-md-12">
-              <p>Clear Advance No : <b>A123456789</b> Date : <b>25-12-2022</b> Status : <b>Fl-Approval</b></p>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-12">
-              <label for="" class="form-label">Advance Type :</label>
-            </div>
-            <div class="col-md-6">
-              <select name="" id="" class="form-select">
-                <option value="">General</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label for="" class="form-label">Request For : ADR | 20221202 | ACCOUNTING</label>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-4">
-              <label for="" class="form-label">For Advance No :</label>
-              <select name="" id="" class="form-select">
-                <option value=""></option>
-              </select>
-            </div>
-            <div class="col-md-4">
-              <label for="" class="form-label">Advance Amount :</label>
-              <div class="input-group">
-                <input type="email" class="form-control" id="example-group2-input2" name="example-group2-input2">
-                <span class="input-group-text">
-                  Baht
-                </span>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="" class="form-label">Name :</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-4">
-              <label for="" class="form-label">Base line date :</label>
-              <input type="date" class="form-control">
-            </div>
-            <div class="col-md-4">
-              <label for="" class="form-label">Posting date :</label>
-              <input type="date" class="form-control">
-            </div>
-            <div class="col-md-4">
-              <label for="" class="form-label">Vendor Code (One time) :</label>
-              <input type="text" class="form-control">
-            </div>
+  </div>
+  <!-- END Hero -->
+  <!-- Page Content -->
+  <div class="content">
+    <div class="block block-rounded">
+      <div class="block-content">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Clear Advance No : <b>A123456789</b> Date : <b>25-12-2022</b> Status : <b>Fl-Approval</b></p>
           </div>
         </div>
-      </div>
-      <div class="block block-rounded">
-        <div class="block-content">
-          <div class="row">
-            <div class="col-md-12 mb-3">
-              <table class="table table-bordered mb-0">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Date</th>
-                    <th>Type</th>
-                    <th>Invoice</th>
-                    <th>Description</th>
-                    <th>CostCenter</th>
-                    <th>Amount</th>
-                    <th>Base VAT</th>
-                    <th>VAT</th>
-                    <th>%WHT</th>
-                    <th>Absorb</th>
-                    <th>WHT</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-tabs">1</a></td>
-                    <td>24-12-2022</td>
-                    <td>Employee</td>
-                    <td>A001</td>
-                    <td>Test...</td>
-                    <td>10001001</td>
-                    <td>1,000.00</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td colspan="4"></td>
-                    <td colspan="4">Total amount (Include VAT) :</td>
-                    <td colspan="4">Total Withholding Tax :</td>
-                  </tr>
-                  <tr>
-                    <td colspan="4"></td>
-                    <td colspan="4">Total Base VAT :</td>
-                    <td colspan="4">Total Withholding Tax - BIG Absorb :</td>
-                  </tr>
-                  <tr>
-                    <td colspan="4"></td>
-                    <td colspan="4">Total VAT :</td>
-                    <td colspan="4">Total expense :</td>
-                  </tr>
-                  <tr>
-                    <td colspan="4"></td>
-                    <td colspan="4">Advance from Company :</td>
-                    <td colspan="4">Return to Employee :</td>
-                  </tr>
-                </tfoot>
-              </table>
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <label for="" class="form-label">Advance Type :</label>
+          </div>
+          <div class="col-md-6">
+            <select name="" id="" class="form-select">
+              <option value="">General</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="" class="form-label">Request For : ADR | 20221202 | ACCOUNTING</label>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <label for="" class="form-label">For Advance No :</label>
+            <select name="" id="" class="form-select">
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="" class="form-label">Advance Amount :</label>
+            <div class="input-group">
+              <input type="email" class="form-control" id="example-group2-input2" name="example-group2-input2">
+              <span class="input-group-text">
+                Baht
+              </span>
             </div>
-            <div class="col-md-12 mb-3 text-end">
-              <button class="btn btn-info me-3"><i class="fa fa-file"></i> Check File Upload</button>
-              <button class="btn btn-primary"><i class="fa fa-print"></i> Print</button>
-            </div>
-            <div class="col-md-6 mb-3">
-              <button class="btn btn-danger me-1">AC-Reject</button>
-              <button class="btn btn-warning me-1">AC-Not Send to SAP</button>
-              <button class="btn btn-primary me-1">AC-Approve > SAP</button>
-            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="" class="form-label">Name :</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <label for="" class="form-label">Base line date :</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="" class="form-label">Posting date :</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="" class="form-label">Vendor Code (One time) :</label>
+            <input type="text" class="form-control">
           </div>
         </div>
       </div>
     </div>
-    <!-- END Page Content -->
-    <!-- Tabs in Modal -->
-    <div class="modal" id="modal-block-tabs" tabindex="-1" role="dialog" aria-labelledby="modal-block-tabs" aria-hidden="true">
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <!-- Block Tabs Default Style -->
-          <div class="block block-transparent bg-white mb-0">
-            <ul class="nav nav-tabs nav-tabs-block" role="tablist">
-              <li class="nav-item">
-                <button class="nav-link active" id="btabs-static-home-tab" data-bs-toggle="tab" data-bs-target="#btabs-static-home" role="tab" aria-controls="btabs-static-home" aria-selected="true">
-                  USER INFO
-                </button>
-              </li>
-              <li class="nav-item">
-                <button class="nav-link" id="btabs-static-profile-tab" data-bs-toggle="tab" data-bs-target="#btabs-static-profile" role="tab" aria-controls="btabs-static-profile" aria-selected="false">
-                  ACCOUNT INFO
-                </button>
-              </li>
-            </ul>
-            <div class="block-content tab-content">
-              <div class="tab-pane active" id="btabs-static-home" role="tabpanel" aria-labelledby="btabs-static-home-tab" tabindex="0">
-                <div class="row mb-3">
-                  <div class="col-md-4">
-                    <label for="" class="form-label">Invoice Date :</label>
-                    <input type="date" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="" class="form-label">Expense Type :</label>
-                    <select name="" id="" class="form-select">
-                      <option value="">1-Expense</option>
-                    </select>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="" class="form-label">Cost Center :</label>
-                    <select name="" id="" class="form-select">
-                      <option value="">100111001 : ACCOUNTING</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-12">
-                    <label for="" class="form-label">Expense Type :</label>
-                    <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
-                  </div>
-                </div> 
-                <div class="row mb-3">
-                  <div class="col-md-12">
-                    <label for="" class="form-label">Categories :</label>
-                    <select name="" id="" class="form-select">
-                      <option value=""></option>
-                    </select>
-                  </div>
-                </div> 
-                <div class="row mb-3">
-                  <div class="col-md-4">
-                    <label for="" class="form-label">Amount per Invoice :</label>
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="example-group2-input2" name="example-group2-input2">
-                      <span class="input-group-text">
-                        Including VAT
-                      </span>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="" class="form-label">Invoice Number :</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="" class="form-label">Vendor Code (one time) :</label>
-                    <select name="" id="" class="form-select">
-                      <option value=""></option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-4">
-                    <label for="" class="form-label">VAT :</label>
-                    <select name="" id="" class="form-control">
-                      <option value="">VAT</option>
-                    </select>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="" class="form-label">Withholding TAX:</label>
-                    <select name="" id="" class="form-control">
-                      <option value="">ค่าบริการ 3%</option>
-                    </select>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="" class="form-label">BIG Absorb :</label>
-                    <select name="" id="" class="form-control">
-                      <option value="">NO</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="btabs-static-profile" role="tabpanel" aria-labelledby="btabs-static-profile-tab" tabindex="0">
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label for="" class="form-label">Base line date :</label>
-                    <input type="date" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="" class="form-label">Posting date :</label>
-                    <input type="date" class="form-control">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-3">
-                    <label for="" class="form-label">Vendor Name :</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="col-md-3">
-                    <label for="" class="form-label">:</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="col-md-3">
-                    <label for="" class="form-label">:</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="col-md-3">
-                    <label for="" class="form-label">:</label>
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-4">
-                    <label for="" class="form-label">House no. Street :</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="" class="form-label">City :</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="" class="form-label">Postal Code :</label>
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-4">
-                    <label for="" class="form-label">Branch No :</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="" class="form-label">Branch Desc :</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="" class="form-label">TAX ID :</label>
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="block-content block-content-full text-end bg-body">
-              <button type="button" class="btn btn-sm btn-danger me-1" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal">Save</button>
-            </div>
+    <div class="block block-rounded">
+      <div class="block-content">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <table class="table mb-3">
+              <thead>
+                <tr>
+                  <th class="text-center">#</th>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Invoice</th>
+                  <th>Description</th>
+                  <th>CostCenter</th>
+                  <th>Amount</th>
+                  <th>Base VAT</th>
+                  <th>VAT</th>
+                  <th>%WHT</th>
+                  <th>Absorb</th>
+                  <th>WHT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-tabs">1</a></td>
+                  <td>24-12-2022</td>
+                  <td>Employee</td>
+                  <td>A001</td>
+                  <td>Test...</td>
+                  <td>10001001</td>
+                  <td>1,000.00</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Total amount (Include VAT) :</td>
+                  <td>Total Withholding Tax :</td>
+                </tr>
+                <tr>
+                  <td>Total Base VAT :</td>
+                  <td>Total Withholding Tax - BIG Absorb :</td>
+                </tr>
+                <tr>
+                  <td>Total VAT :</td>
+                  <td>Total expense :</td>
+                </tr>
+                <tr>
+                  <td>Advance from Company :</td>
+                  <td>Return to Employee :</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <!-- END Block Tabs Default Style -->
+          <div class="col-md-12 mb-3 text-end">
+            <button class="btn btn-info me-3"><i class="fa fa-file"></i> Check File Upload</button>
+            <button class="btn btn-primary"><i class="fa fa-print"></i> Print</button>
+          </div>
+          <div class="col-md-6 mb-3">
+            <button class="btn btn-danger me-1">AC-Reject</button>
+            <button class="btn btn-warning me-1">AC-Not Send to SAP</button>
+            <button class="btn btn-primary me-1">AC-Approve > SAP</button>
+          </div>
         </div>
       </div>
     </div>
-    <!-- END Tabs in Modal -->
-  </main>
-  <app-footer></app-footer>
+    <div class="block block-rounded">
+      <div class="block-content">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Created by : ARS 27-12-2022<p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Page Content -->
+  <!-- Tabs in Modal -->
+  <div class="modal" id="modal-block-tabs" tabindex="-1" role="dialog" aria-labelledby="modal-block-tabs" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <!-- Block Tabs Default Style -->
+        <div class="block block-transparent bg-white mb-0">
+          <ul class="nav nav-tabs nav-tabs-block" role="tablist">
+            <li class="nav-item">
+              <button class="nav-link active" id="btabs-static-home-tab" data-bs-toggle="tab" data-bs-target="#btabs-static-home" role="tab" aria-controls="btabs-static-home" aria-selected="true">
+              USER INFO
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" id="btabs-static-profile-tab" data-bs-toggle="tab" data-bs-target="#btabs-static-profile" role="tab" aria-controls="btabs-static-profile" aria-selected="false">
+              ACCOUNT INFO
+              </button>
+            </li>
+          </ul>
+          <div class="block-content tab-content">
+            <div class="tab-pane active" id="btabs-static-home" role="tabpanel" aria-labelledby="btabs-static-home-tab" tabindex="0">
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="" class="form-label">Invoice Date :</label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Expense Type :</label>
+                  <select name="" id="" class="form-select">
+                    <option value="">1-Expense</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Cost Center :</label>
+                  <select name="" id="" class="form-select">
+                    <option value="">100111001 : ACCOUNTING</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="" class="form-label">Expense Type :</label>
+                  <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="" class="form-label">Categories :</label>
+                  <select name="" id="" class="form-select">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="" class="form-label">Amount per Invoice :</label>
+                  <div class="input-group">
+                    <input type="email" class="form-control" id="example-group2-input2" name="example-group2-input2">
+                    <span class="input-group-text">
+                      Including VAT
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Invoice Number :</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Vendor Code (one time) :</label>
+                  <select name="" id="" class="form-select">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="" class="form-label">VAT :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">VAT</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Withholding TAX:</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">ค่าบริการ 3%</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">BIG Absorb :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">NO</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="btabs-static-profile" role="tabpanel" aria-labelledby="btabs-static-profile-tab" tabindex="0">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="" class="form-label">Base line date :</label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label for="" class="form-label">Posting date :</label>
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-3">
+                  <label for="" class="form-label">Vendor Name :</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-3">
+                  <label for="" class="form-label">:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-3">
+                  <label for="" class="form-label">:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-3">
+                  <label for="" class="form-label">:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="" class="form-label">House no. Street :</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">City :</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Postal Code :</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="" class="form-label">Branch No :</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Branch Desc :</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">TAX ID :</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-content block-content-full text-end bg-body">
+            <button type="button" class="btn btn-sm btn-danger me-1" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal">Save</button>
+          </div>
+        </div>
+        <!-- END Block Tabs Default Style -->
+      </div>
+    </div>
+  </div>
+  <!-- END Tabs in Modal -->
+</main>
+<app-footer></app-footer>
 </div>
