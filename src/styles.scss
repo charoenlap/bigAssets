@@ -3,3 +3,12 @@ $colorTheme: #009A44;
 .bg-header-dark {
 	background-color: $colorTheme !important;
 }
+#page-container.page-header-dark #page-header {
+	background-color: $colorTheme !important;
+}
+
+// color theme 
+.table-theme {
+	background-color: $colorTheme !important;
+	color: #fff;
+}
