@@ -17,4 +17,7 @@ export class MyRequestEditComponent {
       this.showElement = false;
     }
   }
+  async deleteImage(){
+    
+  }
 }

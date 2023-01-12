@@ -20,8 +20,6 @@ import { CMyRequestComponent } from './ClearAdvance/c-my-request/c-my-request.co
 import { CTeamRequestComponent } from './ClearAdvance/c-team-request/c-team-request.component';
 import { CFinanceComponent } from './ClearAdvance/c-finance/c-finance.component';
 import { CAccountComponent } from './ClearAdvance/c-account/c-account.component';
-import { FormRequestComponent } from './te/form-request/form-request.component';
-import { RequestApproveComponent } from './te/request-approve/request-approve.component';
 import { AccountDetailComponent } from './te/account-detail/account-detail.component';
 import { UserGroupComponent } from './setting/user-group/user-group.component';
 import { UserComponent } from './setting/user/user.component';
@@ -37,6 +35,9 @@ import { AMyRequestAddComponent } from './advance/a-my-request-add/a-my-request-
 import { AMyRequestEditComponent } from './advance/a-my-request-edit/a-my-request-edit.component';
 import { CMyRequestAddComponent } from './ClearAdvance/c-my-request-add/c-my-request-add.component';
 import { CMyRequestEditComponent } from './ClearAdvance/c-my-request-edit/c-my-request-edit.component';
+import { TestComponent } from './test/test.component';
+import { MyRequestAddComponent } from './te/my-request-add/my-request-add.component';
+import { TeamRequestDetailComponent } from './te/team-request-detail/team-request-detail.component';
 
 @NgModule({
   declarations: [
@@ -57,8 +58,6 @@ import { CMyRequestEditComponent } from './ClearAdvance/c-my-request-edit/c-my-r
     CTeamRequestComponent,
     CFinanceComponent,
     CAccountComponent,
-    FormRequestComponent,
-    RequestApproveComponent,
     AccountDetailComponent,
     UserGroupComponent,
     UserComponent,
@@ -73,7 +72,10 @@ import { CMyRequestEditComponent } from './ClearAdvance/c-my-request-edit/c-my-r
     AMyRequestAddComponent,
     AMyRequestEditComponent,
     CMyRequestAddComponent,
-    CMyRequestEditComponent
+    CMyRequestEditComponent,
+    TestComponent,
+    MyRequestAddComponent,
+    TeamRequestDetailComponent
   ],
   imports: [
     BrowserModule,

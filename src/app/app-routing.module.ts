@@ -20,9 +20,7 @@ import { UserComponent } from './setting/user/user.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { AccountDetailComponent } from './te/account-detail/account-detail.component';
 import { AccountComponent } from './te/account/account.component';
-import { FormRequestComponent } from './te/form-request/form-request.component';
 import { MyRequestComponent } from './te/my-request/my-request.component';
-import { RequestApproveComponent } from './te/request-approve/request-approve.component';
 import { TeamRequestComponent } from './te/team-request/team-request.component';
 import { PermissionAddComponent } from './setting/permission-add/permission-add.component';
 import { MyRequestEditComponent } from './te/my-request-edit/my-request-edit.component';
@@ -31,8 +29,12 @@ import { AMyRequestAddComponent } from './advance/a-my-request-add/a-my-request-
 import { AMyRequestEditComponent } from './advance/a-my-request-edit/a-my-request-edit.component';
 import { CMyRequestAddComponent } from './ClearAdvance/c-my-request-add/c-my-request-add.component';
 import { CMyRequestEditComponent } from './ClearAdvance/c-my-request-edit/c-my-request-edit.component';
+import { TestComponent } from './test/test.component';
+import { MyRequestAddComponent } from './te/my-request-add/my-request-add.component';
+import { TeamRequestDetailComponent } from './te/team-request-detail/team-request-detail.component';
 
 const routes: Routes = [
+  { path: 'test', component: TestComponent },
   { path: '',  component: SignInComponent },  
   { path: 'dashboard', component: DashboardComponent },
   { path: 'sign-in', component: SignInComponent },
@@ -41,10 +43,10 @@ const routes: Routes = [
   { path: 'userGroup', component: UserGroupComponent },
   { path: 'user', component: UserComponent },
   { path: 'te/myRequest', component: MyRequestComponent },
-  { path: 'te/myRequest/form/add', component: FormRequestComponent },
+  { path: 'te/myRequest/form/add', component: MyRequestAddComponent },
   { path: 'te/myRequest/form/edit', component: MyRequestEditComponent },
   { path: 'te/teamRequest', component: TeamRequestComponent },
-  { path: 'te/teamRequest/detail', component: RequestApproveComponent },
+  { path: 'te/teamRequest/detail', component: TeamRequestDetailComponent },
   { path: 'te/account', component: AccountComponent },
   { path: 'te/account/detail', component: AccountDetailComponent },
   { path: 'advance/myRequest', component: AMyRequestComponent },

@@ -61,6 +61,7 @@
               <table class="table mb-0">
                 <thead>
                   <tr>
+                    <th>#</th>
                     <th>Date</th>
                     <th>Objectives</th>
                     <th>form</th>
@@ -75,7 +76,8 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a href="">16-12-2022</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large">1</a></td>
+                    <td>16-12-2022</td>
                     <td>test</td>
                     <td>Big Head office</td>
                     <td>Big Plant 1</td>
@@ -89,7 +91,7 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <td colspan="4"></td>
+                  <td colspan="5"></td>
                   <td>100</td>
                   <td>0</td>
                   <td>0</td>
@@ -100,9 +102,38 @@
                 </tfoot>
               </table>
             </div>
-            <div class="col-md-4 mb-3">
-              <label for="" class="form-label">Upload file</label>
-              <input class="form-control" type="file" id="example-file-input">
+            <div class="col-md-12 mb-3"> 
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="" class="form-label">Upload file</label>
+                </div>
+                <div class="col-md-4">
+                  <input class="form-control" type="file" id="example-file-input">
+                </div>
+                <div class="col-md-8">
+                  <button class="btn btn-primary">Upload</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th width="10%" class="text-center">#</th>
+                        <th>ATTACHMENT</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>images.jpg</td>
+                        <td><a href="#" class="btn btn-danger" (click)="deleteImage()"><i class="fa fa-trash"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
             <div class="col-md-12 mb-3">
               <button class="btn btn-success me-1">Submit</button>
@@ -119,7 +150,7 @@
               <table class="table mb-3">
                 <thead>
                   <tr>
-                    <th></th>
+                    <th>#</th>
                     <th>Date</th>
                     <th>Type</th>
                     <th>Invoice</th>
@@ -132,7 +163,7 @@
                 <tbody>
                   <tr>
                     <td class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#modal-block-extra-large-two">1</a></td>
-                    <td><a href="">16-12-2022</a></td>
+                    <td>16-12-2022</td>
                     <td>Type</td>
                     <td>1234</td>
                     <td>...</td>
@@ -159,9 +190,38 @@
                 </tbody>
               </table>
             </div>
-            <div class="col-md-4 mb-3">
-              <label for="" class="form-label">Upload file</label>
-              <input class="form-control" type="file" id="example-file-input">
+            <div class="col-md-12 mb-3"> 
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="" class="form-label">Upload file</label>
+                </div>
+                <div class="col-md-4">
+                  <input class="form-control" type="file" id="example-file-input">
+                </div>
+                <div class="col-md-8">
+                  <button class="btn btn-primary">Upload</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th width="10%" class="text-center">#</th>
+                        <th>ATTACHMENT</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>images.jpg</td>
+                        <td><a href="#" class="btn btn-danger" (click)="deleteImage()"><i class="fa fa-trash"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
             <div class="col-md-12 mb-3">
               <button class="btn btn-success me-1">Submit</button>

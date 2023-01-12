@@ -1,10 +1,14 @@
 $colorTheme: #009A44;
 // header
 .bg-header-dark {
-	background-color: $colorTheme !important;
+	// background-color: $colorTheme !important;
+	background-color: #fff !important;
 }
 #page-container.page-header-dark #page-header {
 	background-color: $colorTheme !important;
+}
+.nav-main-link .nav-main-link-icon {
+	color: #333;
 }
 
 // color theme 

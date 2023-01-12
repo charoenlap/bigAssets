@@ -10,7 +10,7 @@ export class MyRequestComponent {
   ngOnInit(){
     this.data = [
       {claim:"ABC123456789",date:"16-12-22",ini:"ADR",amount:"400",status:"new"},
-      {claim:"ABC123456789",date:"16-12-22",ini:"ADR",amount:"400",status:"new"},
+      {claim:"ABC123456789",date:"16-12-22",ini:"ADR",amount:"400",status:"draft"},
       {claim:"ABC123456789",date:"16-12-22",ini:"ADR",amount:"400",status:"new"}
     ];
   }

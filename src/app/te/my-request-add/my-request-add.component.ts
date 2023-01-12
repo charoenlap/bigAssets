@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-form-request',
-  templateUrl: './form-request.component.html',
-  styleUrls: ['./form-request.component.scss']
+  selector: 'app-my-request-add',
+  templateUrl: './my-request-add.component.html',
+  styleUrls: ['./my-request-add.component.scss']
 })
-export class FormRequestComponent {
+export class MyRequestAddComponent {
   showElement = false;
   showTravelling = true;
   showExpense = false;
